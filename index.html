@@ -4,9 +4,103 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Haven</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
 </head>
 <body>
+<div class="-container">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
+            <div class="container px-4 px-lg-5">
+                <a class="navbar-brand text-warning" href="#page-top">Pizza <span>Haven</span> </a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto my-2 my-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>   
+    </div>
+    <!-- Landing page section -->
+    <div class="hero-image">
+        <div class="hero-text">
+            <img src="./assets/logo/logo.png" alt="">
+            <br> <br><br>
+          <h1>WELCOME <br> TO PIZZA HAVEN !!</h1>
+          <p>Great and Amazing Taste!! for a Great Price!!</p>
+          <br><br>
+        </div>
+        <a class="mouse-click start-50 translate-middle-x" href="#about-us">
+            <img src="./assets/mouse_click.png" alt="">
+        </a>
+    </div>
     
+    <!-- End of the landing section page -->
+    
+    <!-- About Us Section -->
+    <div class="about-us">
+        <h1 class="hi text-center about-us">About Us</h1>
+    </div>
+
+    <!-- End of About Us -->
+
+    <!-- Menu Section -->
+    <div class="container menu-section">
+        <h2 class="h2 text-center menu-head">Pizza Menu</h2>
+        <div class="row row-cols-1 row-cols-md-4 g-4 card-group">
+            <div class="col">
+                <div class="card h-100">
+                <img src="./img/chicken.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Chicken Pizza</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="./img/Personal-Hawaiian-Pizza.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Hawaiian Pizza</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="./img/vegan.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Vegan Pizza</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                <img src="./img/topings.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Toppings Pizza</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                </div>
+            </div>
+
+            
+         </div>
+        
+
+    </div>
+    <!-- End of Menu Section -->
+    <div class="container">
+        <h1 class="h1 text-center order-head"> Please Order your Pizza</h1>
+    </div>
+
+</div>
+
     
 </body>
 </html>

@@ -131,6 +131,12 @@ $().ready(function() {
                 break;
         }
 
+        let runningTotal = pizza_price + size_price + crust_price + toppings_price + delivery_price;
+        total = runningTotal * quantity;
+
+        
+
+
 
 
     });

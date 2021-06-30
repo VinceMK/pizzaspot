@@ -97,11 +97,30 @@ $().ready(function() {
                 break;
                                                                 
             default:
-                toppings_price = 200
+                toppings_price = 200;
+                break;
+        }
+        switch (piza_crust) {
+            
+            case "Crispy":
+                crust_price =200;
+            
+                break;
+            case "Stuffed":
+                crust_price = 300;
+        
+                break;
+            case "Gluten":
+                crust_price = 500;
+            
+                break;
+    
+            default:
+                crust_price = 100;
                 break;
         }
 
-        
+
 
     });
 

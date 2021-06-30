@@ -17,16 +17,56 @@ $().ready(function() {
 
         // switch case pizza_flavour
         switch (pizza_flavour) {
-            case value:
+            case pizza_flavour="periperi" :
+                if (pizza_size === "large") {
+                    pizza_price = 2000;  
+                } else if(pizza_size === "medium"){
+                    pizza_price = 1500;
+                    
+                } else{
+                    pizza_price === 1000;
+                }
                 
                 break;
-            case value:
+            case pizza_flavour="Hawaian" :
+                if (pizza_size === "large") {
+                    pizza_price = 2500;  
+                } else if(pizza_size === "medium"){
+                    pizza_price = 2000;
+                    
+                } else{
+                    pizza_price === 1500;
+                }
                 
                 break;
-            case value:
+            case pizza_flavour="Chicken" :
+                if (pizza_size === "large") {
+                    pizza_price = 1800;  
+                } else if(pizza_size === "medium"){
+                    pizza_price = 1300;
+                    
+                } else{
+                    pizza_price === 1000;
+                }
                 
                 break;
+
+            case pizza_flavour ="Vegan"  :
+
+            case pizza_flavour =" Sicilian" :
+                if (pizza_size === "large") {
+                    pizza_price = 1800;  
+                } else if(pizza_size === "medium"){
+                    pizza_price = 1300;
+                    
+                } else{
+                    pizza_price === 1000;
+                }
+        
+                break;
+                
             default:
+                
                 break;
         }
 

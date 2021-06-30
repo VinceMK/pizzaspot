@@ -20,7 +20,8 @@
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
                         <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
                         <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#order">Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#order-sec">Order</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact-sec">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -35,7 +36,7 @@
           <p>Great and Amazing Taste!! for a Great Price!!</p>
           <br><br>
           <div class="col-lg-8 align-self-baseline">
-            <a class="btn btn-primary btn-xl" href="#about-me">Menu/Order</a>
+            <a class="btn btn-primary btn-xl" href="#order-sec">Menu/Order</a>
         </div>
         </div>
         <a class="mouse-click start-50 translate-middle-x" href="#about-us">
@@ -46,7 +47,7 @@
     <!-- End of the landing section page -->
     
     <!-- About Us Section -->
-    <div class="about">
+    <div class="about" id="about">
         <h1 class="hi text-center about-us">About Us</h1>
         <div class="container">
             <p class="text-center p-about">In 1999, two Kenyan siblings opened the main Pizza Haven opposite the Southern Methodist University grounds in Nairobi. 
@@ -99,7 +100,7 @@
                 <div class="card h-100">
                 <img src="./img/topings.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Toppings Pizza</h5>
+                    <h5 class="card-title">Sicilian Pizza</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
             </div>   
@@ -108,46 +109,74 @@
 
     </div>
     <!-- End of Menu Section -->
+    <section class="order-section " id="order-sec">
     <div class="container">
         <h1 class="h1 text-center order-head"> Please Make Your Order </h1>
     </div>
-    <section class="order-section">
-        <div class="container">
+        <div class="container text-center order">
             <form action="">
-                <div class="form-group">
-                    <label for="size">Pizza</label>
-                    <select class="form-control" id="size">
-                      <option ></option>
-                      <option value="periperi">Periperi pizza</option>
-                      <option value="Hawaian">Hawaian pizza</option>
-                      <option value="Chicken">Chicken Ticka</option>
-                      <option value="Vegan">Vegan Piza</option>
-                      <option value="Sicilian">Sicilian Pizza</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">Crust</label>
-                    <select class="form-control" id="crust">
-                      <option value="Crispy">Crispy  </option>
-                      <option value="Stuffed">Stuffed,</option>
-                      <option value="Gluten">Gluten-free</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">Toppings</label>
-                    <select class="form-control" id="Toppings">
-                      <option>Broccolini</option>
-                      <option>sausage,</option>
-                      <option>Black olives</option>
-                      <option>Cheese</option>
-                      <option>mushrooms</option>
-                    </select>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlSelect1">Number of Pizza</label>
-                    <input type="number" name="pizza_no" value="1" id="pizza_no">
-                  </div>
+                <div class="row">
+                    <div class="form-group col-md-4">
+                        <label for="size">Select Pizza flavour</label>
+                        <select class="form-control" id="flavour">
+                          <option ></option>
+                          <option value="periperi">Periperi pizza</option>
+                          <option value="Hawaian">Hawaian pizza</option>
+                          <option value="Chicken">Chicken Ticka</option>
+                          <option value="Vegan">Vegan Piza</option>
+                          <option value="Sicilian">Sicilian Pizza</option>
+                        </select>
+                      </div>
+                      <div class="form-group col-md-4">
+                        <label for="exampleFormControlSelect1">Select Crust Type</label>
+                        <select class="form-control" id="crust">
+                          <option >select crust</option>
+                          <option value="Crispy">Crispy  </option>
+                          <option value="Stuffed">Stuffed</option>
+                          <option value="Gluten">Gluten-free</option>
+                        </select>
+                      </div>
+                      <div class="row">
+                        <div class="form-group col-md-4">
+                            <label for="exampleFormControlSelect1">Pick Toppings</label>
+                            <select class="form-control" id="Toppings">
+                              <option >select toppings</option>
+                              <option value="broccolli">Broccolini</option>
+                              <option value="sausage">sausage</option>
+                              <option value="olives">Black olives</option>
+                              <option value="cheese">Cheese</option>
+                              <option value="mushrooms">mushrooms</option>
+                            </select>
+                          </div>
+                          <div class="form-group col-md-4 ">
+                            <label for="exampleFormControlSelect1 ">Number of Pizza</label>
+                            <input type="number" name="pizza_no" value="1" id="pizza_no">
+                          </div> 
+                      </div>
+                        <div class="row">
+                            <div class="form-group col-md-4">
+                            <label for="exampleFormControlSelect1">Pick Size</label>
+                            <select class="form-control" id="size">
+                            <option >select the size</option>
+                            <option>Large</option>
+                            <option>Meduim</option>
+                            <option>Small</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-4 ">
+                            <label><input type="radio" name="colorCheckbox" value="pre-exixsting" checked> Pick</label>
+                            <label><input type="radio" name="colorCheckbox" value="pre-exixsting" checked> Dail-A- Delivery</label>  
+                        </div>
 
+                      </div>
+                      <div class="row">
+
+                        <button  id="submitform" type="button" class="btn btn-light col-md-3">Make Order</button>
+                      </div>
+                      
+                      
+                </div>
+                
             </form>
         </div>
 

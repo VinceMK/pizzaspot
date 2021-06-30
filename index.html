@@ -14,7 +14,7 @@
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand text-warning" href="#page-top">Pizza <span>Haven</span> </a>
+                <a class="navbar-brand text-warning" href="#page-top">Pizza<span>Haven</span> </a>
                 <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto my-2 my-lg-0">
@@ -34,6 +34,9 @@
           <h1>WELCOME <br> TO PIZZA HAVEN !!</h1>
           <p>Great and Amazing Taste!! for a Great Price!!</p>
           <br><br>
+          <div class="col-lg-8 align-self-baseline">
+            <a class="btn btn-primary btn-xl" href="#about-me">Menu/Order</a>
+        </div>
         </div>
         <a class="mouse-click start-50 translate-middle-x" href="#about-us">
             <img src="./assets/mouse_click.png" alt="">
@@ -43,8 +46,20 @@
     <!-- End of the landing section page -->
     
     <!-- About Us Section -->
-    <div class="about-us">
+    <div class="about">
         <h1 class="hi text-center about-us">About Us</h1>
+        <div class="container">
+            <p class="text-center p-about">In 1999, two Kenyan siblings opened the main Pizza Haven opposite the Southern Methodist University grounds in Nairobi. 
+                As word spread of the café's extraordinary pizza and amicable help, so did Pizza Haven areas across the Heartland.  From 1999-2009, taste buds across 
+                the southeastern and southwestern Nairobi had the option to encounter  direct the produced using scratch fresh, crackery ,Original Thin covering, and 
+                tart mark sauce that are still signs of the Pizza Haven brand today.  For over 60 years, Pizza Haven has valued newness and advancement, presenting the
+                 Odi Pizza in 2019, the principal dessert  "Pizzart" pizza in 2016 and the chain's trademark Bacon Cheeseburger Pizza by the 2020s. We're actually concocting 
+                 new plans right up 'til today and are focused on carrying our best pizza to the table, without fail. 
+    
+                It's anything but an advantage serving multiple ages of steadfast clients, and we welcome any individual who hasn't visited on the way and start your own family 
+                custom with us today.</p>
+        </div>
+        
     </div>
 
     <!-- End of About Us -->
@@ -87,17 +102,56 @@
                     <h5 class="card-title">Toppings Pizza</h5>
                     <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                 </div>
-            </div>
-
-            
+            </div>   
          </div>
         
 
     </div>
     <!-- End of Menu Section -->
     <div class="container">
-        <h1 class="h1 text-center order-head"> Please Order your Pizza</h1>
+        <h1 class="h1 text-center order-head"> Please Make Your Order </h1>
     </div>
+    <section class="order-section">
+        <div class="container">
+            <form action="">
+                <div class="form-group">
+                    <label for="size">Pizza</label>
+                    <select class="form-control" id="size">
+                      <option ></option>
+                      <option value="periperi">Periperi pizza</option>
+                      <option value="Hawaian">Hawaian pizza</option>
+                      <option value="Chicken">Chicken Ticka</option>
+                      <option value="Vegan">Vegan Piza</option>
+                      <option value="Sicilian">Sicilian Pizza</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Crust</label>
+                    <select class="form-control" id="crust">
+                      <option value="Crispy">Crispy  </option>
+                      <option value="Stuffed">Stuffed,</option>
+                      <option value="Gluten">Gluten-free</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Toppings</label>
+                    <select class="form-control" id="Toppings">
+                      <option>Broccolini</option>
+                      <option>sausage,</option>
+                      <option>Black olives</option>
+                      <option>Cheese</option>
+                      <option>mushrooms</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleFormControlSelect1">Number of Pizza</label>
+                    <input type="number" name="pizza_no" value="1" id="pizza_no">
+                  </div>
+
+            </form>
+        </div>
+
+    </section>
 
 </div>
 

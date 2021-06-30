@@ -70,8 +70,39 @@ $().ready(function() {
                 break;
         }
 
+        switch (piza_topings) {
+            case "broccolli":
 
-        console.log(piza_crust);
+                toppings_price = 100;
+                break;
+            case "broccolli":
+                toppings_price = 100;
+            
+                break;
+            case "sausage":
+                toppings_price =100;
+        
+                break;
+            case "olives":
+                toppings_price = 120;
+    
+                break;
+            case "cheese":
+                toppings_price =200;
+
+                break;
+            case "mushrooms":
+                toppings_price = 100;
+
+                break;
+                                                                
+            default:
+                toppings_price = 200
+                break;
+        }
+
+        
+
     });
 
 

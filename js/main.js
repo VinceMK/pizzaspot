@@ -119,6 +119,17 @@ $().ready(function() {
                 crust_price = 100;
                 break;
         }
+        switch (delivery_mode) {
+            case "deliver":
+                delivery_price = 200;
+
+                
+                break;
+        
+            default:
+                delivery_price = 0;
+                break;
+        }
 
 
 

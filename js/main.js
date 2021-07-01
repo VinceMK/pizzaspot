@@ -12,7 +12,7 @@ $().ready(function() {
         let pizza_size = $("#size option:selected").val();
         let piza_crust = $("#crust option:selected").val();
         let piza_topings = $("#Toppings option:selected").val();
-        let delivery_mode = $('input[name=""]:checked').val();
+        let delivery_mode = $('input[name="colorCheckbox"]:checked').val();
         let quantity = $('#pizza_no').val();
 
         // switch case pizza_flavour
@@ -115,12 +115,14 @@ $().ready(function() {
                 break;
     
             default:
-                crust_price = $100;
+                crust_price = 100;
                 break;
         }
         switch (delivery_mode) {
             case "deliver":
-                delivery_price = $200;
+                delivery_price = 200;
+                let delivered_to = prompt('Where do you want it delivered');
+                alert("The Pizza will be delivered "+ delivered_to );
                 break;
             case "pick":
                 delivery_price = $0;

@@ -1,12 +1,11 @@
 
-let pizza_price , size_price, crust_price, toppings_price, delivery_price;
+let pizza_price , crust_price, toppings_price, delivery_price;
 
 let total= 0;
 
 $().ready(function() {
-    ('#submitform').click(function(event) {
+    $('#submitform').click(function(event) {
          event.preventDefault();
-
 
         let pizza_flavour = $("#flavour option:selected").val();
         let pizza_size = $("#size option:selected").val();
@@ -24,7 +23,7 @@ $().ready(function() {
                     pizza_price = 1500;
                     
                 } else{
-                    pizza_price === 1000;
+                    pizza_price =1000;
                 }
                 
                 break;
@@ -35,7 +34,7 @@ $().ready(function() {
                     pizza_price = 2000;
                     
                 } else{
-                    pizza_price === 1500;
+                    pizza_price = 1500;
                 }
                 
                 break;
@@ -46,7 +45,7 @@ $().ready(function() {
                     pizza_price = 1300;
                     
                 } else{
-                    pizza_price === 1000;
+                    pizza_price = 1000;
                 }
                 
                 break;
@@ -60,7 +59,7 @@ $().ready(function() {
                     pizza_price = 1300;
                     
                 } else{
-                    pizza_price === 1000;
+                    pizza_price = 1000;
                 }
         
                 break;
@@ -72,25 +71,24 @@ $().ready(function() {
 
         switch (piza_topings) {
             case "broccolli":
-
                 toppings_price = 100;
-                break;
+            break;
             case "broccolli":
                 toppings_price = 100;
             
-                break;
+            break;
             case "sausage":
                 toppings_price =100;
         
-                break;
+            break;
             case "olives":
                 toppings_price = 120;
     
-                break;
+            break;
             case "cheese":
-                toppings_price =200;
+                toppings_price = 200;
 
-                break;
+            break;
             case "mushrooms":
                 toppings_price = 100;
 
@@ -116,26 +114,33 @@ $().ready(function() {
                 break;
     
             default:
-                crust_price = 100;
+                crust_price = $100;
                 break;
         }
         switch (delivery_mode) {
             case "deliver":
-                delivery_price = 200;
-
-                
+                delivery_price = $200;
                 break;
-        
+            case "pick":
+                delivery_price = $0;
             default:
                 delivery_price = 0;
                 break;
         }
 
-        let runningTotal = pizza_price + size_price + crust_price + toppings_price + delivery_price;
+        let runningTotal = pizza_price  + crust_price + toppings_price + delivery_price;
         total = runningTotal * quantity;
 
+/*         alert(total);
+ */
+        /* document.getElementById("#total").innerHTML = total */
         
-
+        $('#pizzaName').html(pizza_flavour);
+        $('#pizzaSize').html(pizza_size+"-"+"Ksh."+ pizza_price);
+        $('#pizzaCrust').html(piza_crust+"-"+"Ksh."+ crust_price);
+        $('#pizzaTopings').html(piza_topings+"-"+ "Ksh."+toppings_price);
+        $('#pizzaQuantity').html( "x"+quantity);
+        $('#total').html("Ksh: "+total);
 
 
 

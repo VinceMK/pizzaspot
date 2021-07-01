@@ -70,7 +70,7 @@ body, html {
 .order-section{
     background-color: #ffc107;
     margin-bottom: 5%;
-    height: 40vh;
+    height: 600px;
 }
 #submitform{
     justify-content: center;
@@ -78,4 +78,7 @@ body, html {
     margin-left: 40%;
     bottom: 0;
     
+}
+.order_summary{
+    margin-top: 5%;
 }

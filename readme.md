@@ -15,7 +15,7 @@ Pull requests are welcome.
 
 ### prerequisite
     1.A text editor preferably visual studio code.
-    *  git clone the repo git clone https://github.com/fkinyae/mydonor
+    *  git clone the repo git clone https://vincemk.github.io/pizzaspot/
     *  cd "mydonor"
     *  code .
 ## [Live link]

@@ -3,6 +3,7 @@ let pizza_price , crust_price, toppings_price, delivery_price;
 
 let total= 0;
 
+
 $().ready(function() {
     $('#submitform').click(function(event) {
          event.preventDefault();
@@ -148,4 +149,12 @@ $().ready(function() {
 
 
    
+});
+$(document).ready(function() {
+    let day = new Date();
+    let yr = day.getFullYear();
+
+    const yrs = document.getElementById("yrs");
+
+    yrs.innerHTML = "© " + yr + " Copyright:";
 });
